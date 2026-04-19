@@ -36,7 +36,7 @@ def go_home():
 
 # --- 화면 1: 메인 홈 (유아 선택 화면) ---
 if st.session_state.page == "home":
-    st.title("💙 우리 반 아이들")
+    st.title("💙매일 기록하는 IEP💙")
     
     col_add, col_empty = st.columns([1, 3])
     with col_add:
