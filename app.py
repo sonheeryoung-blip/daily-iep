@@ -1,13 +1,13 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px # 그래프를 위한 라이브러리
-from streamlit_gsheets import GSheetsConnection # 구글 시트 연결 라이브러리
+#from streamlit_gsheets import GSheetsConnection # 구글 시트 연결 라이브러리
 
 # 1. 페이지 설정
 st.set_page_config(page_title="매일 기록하는 IEP", layout="wide")
 
 # 2. 구글 시트 연결 (설정값은 Streamlit Cloud의 Secrets에 저장)
-conn = st.connection("gsheets", type=GSheetsConnection)
+#conn = st.connection("gsheets", type=GSheetsConnection)
 
 # 데이터 불러오기 (시트의 'Record' 탭 읽기)
 try:
