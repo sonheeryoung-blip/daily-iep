@@ -74,7 +74,7 @@ elif st.session_state.page == "add_student":
     with st.form("add_form", clear_on_submit=True):
         name = st.text_input("이름")
         class_name = st.text_input("통합학급")
-        special_type = st.selectbox("선정영역", ["지적장애", "자폐성장애", "의사소통장애", "발달지체", "기타"])
+        special_type = st.selectbox("선정영역", ["지적장애", "자폐성장애", "의사소통장애", "발달지체", "시각장애", "청각장애", "정서행동장애", "학습장애", "지체장애", "건강장애", "", "기타"])
         photo = st.file_uploader("사진 업로드", type=['jpg', 'png'])
         
         goals = []
